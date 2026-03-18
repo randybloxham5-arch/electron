@@ -575,6 +575,7 @@ __metadata:
     "@types/temp": "npm:^0.9.4"
     "@typescript-eslint/eslint-plugin": "npm:^8.32.1"
     "@typescript-eslint/parser": "npm:^8.7.0"
+    "@vercel/analytics": "npm:^2.0.0"
     "@xmldom/xmldom": "npm:^0.8.11"
     buffer: "npm:^6.0.3"
     chalk: "npm:^4.1.0"
@@ -2456,6 +2457,37 @@ __metadata:
   version: 1.2.0
   resolution: "@ungap/structured-clone@npm:1.2.0"
   checksum: 10c0/8209c937cb39119f44eb63cf90c0b73e7c754209a6411c707be08e50e29ee81356dca1a848a405c8bdeebfe2f5e4f831ad310ae1689eeef65e7445c090c6657d
+  languageName: node
+  linkType: hard
+
+"@vercel/analytics@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@vercel/analytics@npm:2.0.0"
+  peerDependencies:
+    "@remix-run/react": ^2
+    "@sveltejs/kit": ^1 || ^2
+    next: ">= 13"
+    nuxt: ">= 3"
+    react: ^18 || ^19 || ^19.0.0-rc
+    svelte: ">= 4"
+    vue: ^3
+    vue-router: ^4
+  peerDependenciesMeta:
+    "@remix-run/react":
+      optional: true
+    "@sveltejs/kit":
+      optional: true
+    next:
+      optional: true
+    react:
+      optional: true
+    svelte:
+      optional: true
+    vue:
+      optional: true
+    vue-router:
+      optional: true
+  checksum: 10c0/21b646859616899012bf3056bdc2d79db096c95b5717189ea1ef7947136cbb2a4efb704ed66fbf56d43cf6c78c1acf1fc52b43ebfec8765df19a5c88fbf96255
   languageName: node
   linkType: hard
 
