@@ -156,5 +156,8 @@
     "abstract-socket": {
       "built": true
     }
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.0"
   }
 }

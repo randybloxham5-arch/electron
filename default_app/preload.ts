@@ -1,3 +1,5 @@
+import { inject } from '@vercel/analytics';
+
 const { ipcRenderer, contextBridge } = require('electron/renderer');
 
 const policy = window.trustedTypes.createPolicy('electron-default-app', {
@@ -33,6 +35,12 @@ async function loadSVG (element: HTMLSpanElement) {
 }
 
 async function initialize () {
+  // Initialize Vercel Web Analytics
+  inject({
+    mode: 'auto',
+    debug: true
+  });
+
   const electronPath = await ipcRenderer.invoke('bootstrap');
   function replaceText (selector: string, text: string, link?: string) {
     const element = document.querySelector<HTMLElement>(selector);
